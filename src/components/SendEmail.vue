@@ -43,12 +43,12 @@
 export default {
     props: {
         plugin: { type: Object, required: true },
-        args: { type: Object, default: () => ({ recipients: [], subject: null, content: null }) },
+        args: { type: Object, required: true },
     },
     emits: ['update:args'],
     computed: {
         recipients() {
-            return this.args.recipients;
+            return this.args.recipients || [];
         },
         subject() {
             return this.args.subject;
