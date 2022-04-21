@@ -43,29 +43,29 @@
 export default {
     props: {
         plugin: { type: Object, required: true },
-        args: { type: Array, default: () => [[], null, null] },
+        args: { type: Object, required: true },
     },
     emits: ['update:args'],
     computed: {
         recipients() {
-            return this.args[0];
+            return this.args.recipients || [];
         },
         subject() {
-            return this.args[1];
+            return this.args.subject;
         },
         content() {
-            return this.args[2];
+            return this.args.content;
         },
     },
     methods: {
         setRecipients(recipients) {
-            this.$emit('update:args', [recipients, this.subject, this.content]);
+            this.$emit('update:args', { ...this.args, recipients });
         },
         setSubject(subject) {
-            this.$emit('update:args', [this.recipients, subject, this.content]);
+            this.$emit('update:args', { ...this.args, subject });
         },
         setContent(content) {
-            this.$emit('update:args', [this.recipients, this.subject, content]);
+            this.$emit('update:args', { ...this.args, content });
         },
     },
 };
