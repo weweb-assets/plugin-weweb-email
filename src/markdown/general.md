@@ -2,4 +2,4 @@ WeWeb Email
 
 This plugin will let you:
 
--   Send a email
+-   Send an email through an action in a Workflow
