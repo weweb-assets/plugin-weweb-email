@@ -2,9 +2,7 @@
 
 There is nothing to configure for this plugin. 
 
-Since you added the plugin to your project, you now have access to the `Send an email` no-code workflow action:
-
-![WeWeb Email workflow action](https://docs.weweb.io/assets/weweb-email2-d7be2071.png)
+Since you added the plugin to your project, you now have access to the [`Send an email` action in no-code workflows](https://docs.weweb.io/plugins/extensions/weweb-email.html#send-email).
 
 ## Warning
 
