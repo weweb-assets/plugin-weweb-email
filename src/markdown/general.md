@@ -4,7 +4,7 @@ The WeWeb Email plugin was developed to allow you to add an email component to y
 
 This plugin will let you send an email through an action in a workflow:
 
-![WeWeb Email workflow action](https://docs.weweb.io/assets/weweb-email2-d7be2071.png)
+![WeWeb Email workflow action](https://docs.weweb.io/assets/weweb-email2-c4AWfDs0.png)
 
 However, as your project grows, you will quickly feel limited because:
 - you can't customize the sender,
