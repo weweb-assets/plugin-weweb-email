@@ -1,0 +1,42 @@
+{
+    "schemaVersion": 1,
+    "actions": [
+        {
+            "code": "sendEmail",
+            "name": "Send an email",
+            "isAsync": true,
+            "form": {
+                "fields": [
+                    {
+                        "key": "recipients",
+                        "label": "Recipients",
+                        "type": "list",
+                        "bindable": true,
+                        "item": {
+                            "type": "text",
+                            "placeholder": "Enter an email",
+                            "bindable": true
+                        }
+                    },
+                    {
+                        "key": "subject",
+                        "label": "Subject",
+                        "type": "text",
+                        "required": true,
+                        "bindable": true,
+                        "placeholder": "Enter a value"
+                    },
+                    {
+                        "key": "content",
+                        "label": "Content",
+                        "type": "source",
+                        "language": "html",
+                        "required": true,
+                        "bindable": true,
+                        "placeholder": "You can use HTML tags"
+                    }
+                ]
+            }
+        }
+    ]
+}
